@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+p{
+    color: black;
+    font-size: 16px;
+   
+}
+h1{
+    font-size: 38px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: red; */
+    color: rgba(143, 122, 6, 0.764);
+
+}
+.part__one{
+    flex:0.7;
+    /* background-color: antiquewhite; */
+}
+.part_two{
+    flex: 0.3;
+    /* background-color: aqua; */
+}
+.div__one{
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    /* background-color: blue; */
+    margin: 20px;
+    padding: 30px;
+}
+.div_two{
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    /* background-color: blue; */
+    margin: 20px;
+
+}
+.row{
+    display: flex;
+    justify-content: center;
+
+    padding: 10px;
+    /* background-color:yellow; */
+}
+
+
+
+
+
+/* navbar setion  */
+.nav{
+    border-left: 2px solid rgb(138, 103, 14);
+}
+.nav > li{
+   margin: 20px;
+   padding: 10px 20px;
+   list-style: none;
+}
+.nav > li >a {
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.part_two{
+    margin-top: 40px;
+}
+
+.row_two{
+    text-align: center;
+    margin:0  auto;
+    /* background-color:red; */
+}
+.third__div{
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* third row design 
+ */
+.third__row{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: red; */
+    margin-top: 40px;
+}
+.content__part{
+    /* background-color: blue; */
+    padding:40px 30px;
+    margin: 10px;
+    margin-left: 100px;
+    width: 60%;
+    text-align: justify !important;
+}
+.content__title >p{
+    text-align: center;
+}
+.content__title{
+    padding: 30px;
+}
+.content__title >h1{
+    text-align: center;
+    font: 30px;
+    color: rgba(143, 122, 6, 0.764);
+    letter-spacing: 5px;
+    padding: 20px;
+}
+
+
+/* resposive code  */
+
+
+@media (max-width:800px){
+    .row{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .part__one{
+    flex:0.5;
+   
+}
+.nav > li{
+   margin: 20px;
+   padding: 10px;
+   list-style: none;
+   margin-right: 60px;
+}
+    
+    .third__row{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        
+    }
+    .content__title >p{
+       margin-left: 30px;
+    }
+    .div_two > p{
+        padding: 10px;
+    }
+    
+
+}
